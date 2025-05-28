@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Велосипед для девочек</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/54fc53b5b1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="header">
+      <div class="lang-navbar">
+          <div class="container">
+          <ul class="nav justify-content-end">
+              <li class="nav-item">
+                  <a class="nav-link" href="#">8 800 777-777-1</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Магазины</a>
+              </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Доставка и оплата</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Продавай на спортмастере</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Помощь</a>
+              </li>
+          </ul>
+              </div>
+      </div>
+    <div>
+      <div class="search-navbar p-2">
+          <div class="container">
+          <ul class="nav justify-content-between">
+              <li class="nav-item">
+                  <img src="./img/logo.png" alt="logo">
+              </li>
+              <li class="nav-item">
+                  <form class="form-inline">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск...</button>
+                  </form>
+              </li>
+              <div class="d-flex">
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Войти</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Сравнение</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Избранное</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Корзина</a>
+              </li>
+              </div>
+          </ul>
+          </div>
+      </div>
+       <div class="goods-navbar">
+          <div class="container">
+          <ul class="nav">
+              <li class="nav-item">
+                  <a class="nav-link" href="#">КАТАЛОГ</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">ЖЕНЩИНАМ</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">МУЖЧИНАМ</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">ДЕТЯМ И ПОДРОСТКАМ</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">ВИДЫ СПОРТА</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">БРЕНДЫ</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">АКЦИИ</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">МЕДИА</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">БЛОГ</a>
+              </li>
+          </ul>
+              </div>
+      </div>
+</div>
+<div class="main py-5">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb py-2 mb-0">
+        <li class="breadcrumb-item">
+          <a href="#">главная</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="#">виды спорта</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="#">велоспорт</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+          велосипеды
+        </li>
+      </ol>
+    </nav>
+<div class="row">
+        <!-- Галерея -->
+        <div class="col-md-6">
+          <div class="product-gallery">
+            <ul class="thumbnails">
+              <li class="active" data-img="card1.jpg">
+                <img src="img/card1.jpg" alt="Превью 1">
+              </li>
+              <li data-img="card2.jpg">
+                <img src="img/card2.jpg" alt="Превью 2">
+              </li>
+              <li data-img="card3.jpg">
+                <img src="img/card3.jpg" alt="Превью 3">
+              </li>
+              <li data-img="card4.jpg">
+                <img src="img/card4.jpg" alt="Превью 4">
+              </li>
+            </ul>
+            <div class="main-image">
+              <img id="currentImage" src="img/card1.jpg" alt="Основное фото">
+            </div>
+          </div>
+        </div>
+
+        <!-- Информация о товаре -->
+        <div class="col-md-6 product-info">
+          <div class="d-flex justify-content-end mb-2">
+            <i class="far fa-heart mr-3" title="В избранное"></i>
+            <i class="fas fa-bicycle" title="Похожие"></i>
+          </div>
+          <div class="brand">Roces</div>
+          <h1>Велосипед для девочек Roces Stella 24"</h1>
+          <div class="sku mb-3">Арт. S21ERCBB008RCS-N1 • one size</div>
+          <div class="info-links mb-3">
+            <a href="#">Оставить отзыв</a>
+            <a href="#">Характеристики</a>
+          </div>
+          <div class="badges mb-3">
+            <span class="badge badge-danger">-20 %</span>
+            <span class="badge badge-primary">до 20 % бонусами</span>
+            <span class="badge badge-secondary">Сервисные услуги</span>
+            <span class="badge badge-success">Первое ТО в подарок</span>
+            <span class="badge badge-info">Оплата частями</span>
+          </div>
+          <div class="price mb-3">
+            <span class="price-old">42 999 ₽</span>
+            <span class="price-new">34 399 ₽</span>
+          </div>
+          <div class="cheaper mb-4">
+            <span>Хотите дешевле?</span>
+            <button class="btn btn-sm btn-outline-primary">Авторизуйтесь</button>
+          </div>
+          <div class="size-select mb-4">
+            <label for="sizeSelect">Выберите размер</label>
+            <select id="sizeSelect" class="form-control">
+              <option>24"</option>
+            </select>
+            <small class="form-text text-muted">Правила подбора</small>
+          </div>
+          <button class="btn-cart" disabled>В корзину</button>
+        </div>
+      </div>
+
+      <!-- Секция "О ТОВАРЕ" -->
+      <div class="about-product">
+        <h2>О ТОВАРЕ</h2>
+        <div id="accordion">
+          <!-- Описание -->
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse"
+                        data-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                  Описание
+                </button>
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse show"
+                 aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                <p>
+                Подростковый велосипед Roces Stella с отличным накатом и проходимостью. Современная легкая рама, выполненная с использованием технологии Hydroforming, и шлифованные швы делают внешний облик велосипеда спортивным и уникальным. Продвинутые компоненты обеспечивают комфортное использование велосипеда.
+              </p>
+            <div class="row align-items-center my-4 feature">
+      <!-- Картинка -->
+      <div class="col-md-6 order-md-2 mb-3 mb-md-0">
+        <img src="img/1.1.jpg"
+             alt="Легкость"
+             class="img-fluid rounded">
+      </div>
+      <!-- Текст -->
+      <div class="col-md-6 order-md-1">
+        <h3 class="feature-title">ЛЕГКОСТЬ</h3>
+        <p class="feature-text">
+          В модели использована легкая алюминиевая рама <strong>6061 Aluminium</strong> 
+          со специальными трубами, выполненными по технологии <strong>Hydroforming</strong>.
+        </p>
+      </div>
+    </div>
+    </div>
+
+
+    <!-- === Новая секция «БЕЗОПАСНОСТЬ» === -->
+    <div class="row align-items-center my-4 feature">
+      <!-- Картинка -->
+      <div class="col-md-6 mb-3 mb-md-0">
+        <img src="img/1.2.jpg"
+             alt="Безопасность"
+             class="img-fluid rounded">
+      </div>
+      <!-- Текст -->
+      <div class="col-md-6">
+        <h3 class="feature-title">БЕЗОПАСНОСТЬ</h3>
+        <p class="feature-text">
+          Дисковые механические тормоза для точного и надёжного торможения 
+          в любых условиях и при любой скорости.
+        </p>
+        </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Карточка 2: Технологии -->
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse"
+                    data-target="#collapseTwo" aria-expanded="false"
+                    aria-controls="collapseTwo">
+              Технологии
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse"
+             aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+
+            <!-- Технология 1 -->
+            <div class="technology-item">
+              <img src="img/6061.png"
+                   alt="6061 Aluminium" class="tech-icon">
+              <div>
+                <h6 class="tech-title">6061 Aluminium</h6>
+                <p class="tech-description">
+                  Алюминиевый сплав, применяемый в изготовлении рам велосипедов, — лёгкий, 
+                  устойчивый к образованию усталостных трещин и микро­деформаций 
+                  в зоне сварных швов.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+                    <div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne">
+          Характеристики
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne"
+         class="collapse show"
+         aria-labelledby="headingOne"
+         data-parent="#accordion">
+      <div class="card-body">
+
+        <!-- === Вставляем сюда наш спецификационный список === -->
+        <div class="about-product">
+          <!-- Раздел Технические характеристики -->
+          <h3 class="spec-section">Технические характеристики</h3>
+          <div class="spec-list">
+            <div class="spec-item">
+              <div class="spec-name">Сезонность</div>
+              <div class="spec-value">2021/2022</div>
+            </div>
+          </div>
+
+          <!-- Раздел Колеса -->
+          <h3 class="spec-section">Колеса</h3>
+          <div class="spec-list">
+            <div class="spec-item">
+              <div class="spec-name">Тип обода</div>
+              <div class="spec-value">Двойной</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-name">Материал обода</div>
+              <div class="spec-value">Алюминий</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-name">Наименование покрышек</div>
+              <div class="spec-value">KENDA K-1047, 24″×2.35″</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-name">Материал втулок</div>
+              <div class="spec-value">Алюминий</div>
+            </div>
+          </div>
+
+          <!-- Раздел Вилка -->
+          <h3 class="spec-section">Вилка</h3>
+          <div class="spec-list">
+            <div class="spec-item">
+              <div class="spec-name">Наименование вилки</div>
+              <div class="spec-value">Стальная, шток 28,6 мм</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-name">Конструкция вилки</div>
+              <div class="spec-value">Без амортизации</div>
+            </div>
+          </div>
+
+          <!-- Раздел Тормоза -->
+          <h3 class="spec-section">Тормоза</h3>
+          <div class="spec-list">
+            <div class="spec-item">
+              <div class="spec-name">Тип переднего тормоза</div>
+              <div class="spec-value">Дисковый механический</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-name">Тип заднего тормоза</div>
+              <div class="spec-value">Дисковый механический</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-name">Наименование тормоза</div>
+              <div class="spec-value">Ротор 160 мм</div>
+            </div>
+          </div>
+
+          <!-- Раздел Рама -->
+          <h3 class="spec-section">Рама</h3>
+          <div class="spec-list">
+            <div class="spec-item">
+              <div class="spec-name">Конструкция рулевой колонки</div>
+              <div class="spec-value">Полуинтегрированная</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-name">Амортизация</div>
+              <div class="spec-value">Rigid</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-name">Материал рамы</div>
+              <div class="spec-value">Алюминий</div>
+            </div>
+          </div>
+        </div>
+        <!-- === /about-product === -->
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Блок «Также смотрят» -->
+<section class="also-viewed">
+  <h2 class="also-viewed__title">ТАКЖЕ СМОТРЯТ</h2>
+  <div class="also-viewed__list">
+    <!-- Карточка товара 1 -->
+    <div class="also-viewed__item">
+      <div class="also-viewed__img-wrap">
+        <img src="img/111.jpg" alt="Contessa 20 Rigid" class="also-viewed__img">
+        <span class="also-viewed__discount">-20 %</span>
+      </div>
+      <div class="also-viewed__info">
+        <div class="also-viewed__price">
+          <span class="also-viewed__new">37 599 ₽</span>
+          <span class="also-viewed__old">46 999 ₽</span>
+        </div>
+        <div class="also-viewed__name">
+          Велосипед для девочек Contessa 20″ Rigid, 2022
+        </div>
+      </div>
+    </div>
+
+    <!-- Карточка товара 2 -->
+    <div class="also-viewed__item">
+      <div class="also-viewed__img-wrap">
+        <img src="img/222.jpg" alt="Merida Matts" class="also-viewed__img">
+        <span class="also-viewed__discount">-20 %</span>
+      </div>
+      <div class="also-viewed__info">
+        <div class="also-viewed__price">
+          <span class="also-viewed__new">55 999 ₽</span>
+          <span class="also-viewed__old">69 999 ₽</span>
+        </div>
+        <div class="also-viewed__name">
+          Велосипед подростковый Merida Matts J.24-24″
+        </div>
+      </div>
+    </div>
+
+    <!-- Карточка товара 3 -->
+    <div class="also-viewed__item">
+      <div class="also-viewed__img-wrap">
+        <img src="img/333.jpg" alt="Stark Madness BMX" class="also-viewed__img">
+      </div>
+      <div class="also-viewed__info">
+        <div class="also-viewed__price">
+          <span class="also-viewed__new">24 990 ₽</span>
+        </div>
+        <div class="also-viewed__name">
+          Велосипед подростковый Stark Madness BMX 1 серебристый матовый/розовый/…
+        </div>
+      </div>
+    </div>
+
+    <!-- Карточка товара 4 -->
+    <div class="also-viewed__item">
+      <div class="also-viewed__img-wrap">
+        <img src="img/444.jpg" alt="Maxiscoo 7BIKE" class="also-viewed__img">
+      </div>
+      <div class="also-viewed__info">
+        <div class="also-viewed__price">
+          <span class="also-viewed__new">56 900 ₽</span>
+        </div>
+        <div class="also-viewed__name">
+          Велосипед Детский Maxiscoo 7BIKE 24″ M500 Жёлтый (2024)
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </div> <!-- #accordion -->
+  </div> <!-- .about-product -->
+
+</div> <!-- .container -->
+    <footer class="lower-footer bg-primary text-light">
+  <div class="container py-5">
+    <!-- Первая секция: 3 колонки -->
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <h6 class="text-white">Мой Спортмастер</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light">Подарочные карты</a></li>
+          <li><a href="#" class="text-light">Личный кабинет</a></li>
+          <li><a href="#" class="text-light">Акции</a></li>
+          <li><a href="#" class="text-light">Статьи</a></li>
+          <li><a href="#" class="text-light">Тренировки</a></li>
+          <li><a href="#" class="text-light">Афиша</a></li>
+          <li><a href="#" class="text-light">Трекер</a></li>
+          <li><a href="#" class="text-light">Счётчик калорий</a></li>
+          <li><a href="#" class="text-light">Планета в твоих руках</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h6 class="text-white">Помощь</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light">Доставка и оплата</a></li>
+          <li><a href="#" class="text-light">Рассрочка и кредит</a></li>
+          <li><a href="#" class="text-light">Обмен и возврат</a></li>
+          <li><a href="#" class="text-light">Клубная программа</a></li>
+          <li><a href="#" class="text-light">Спортмастер PRO</a></li>
+          <li><a href="#" class="text-light">Гарантия лучшей цены</a></li>
+          <li><a href="#" class="text-light">Сервисные услуги</a></li>
+          <li><a href="#" class="text-light">Товары партнёров</a></li>
+          <li><a href="#" class="text-light">Продавай на Спортмастере</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h6 class="text-white">О компании</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light">О нас</a></li>
+          <li><a href="#" class="text-light">Магазины</a></li>
+          <li><a href="#" class="text-light">Новости</a></li>
+          <li><a href="#" class="text-light">Наши эксперты</a></li>
+          <li><a href="#" class="text-light">Наши партнёры</a></li>
+          <li><a href="#" class="text-light">Вакансии</a></li>
+          <li><a href="#" class="text-light">Контакты</a></li>
+          <li><a href="#" class="text-light">Информация о закупках</a></li>
+          <li><a href="#" class="text-light">Сотрудничество</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="border-light">
+
+    <!-- Вторая секция: контакты + подписка -->
+    <div class="row align-items-center mb-4">
+      <div class="col-md-6 mb-3 mb-md-0">
+        <h6 class="text-white">Контакты</h6>
+        <p class="h5 text-white mb-0">8 800 777-77-1</p>
+      </div>
+      <div class="col-md-6">
+        <h6 class="text-white">Хотите получать скидки первыми?</h6>
+        <form>
+          <div class="input-group">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Введите свой e-mail"
+              required>
+            <button class="btn btn-dark" type="submit">→</button>
+          </div>
+          <small class="form-text text-light mt-2">
+            Нажимая «Подписаться», вы соглашаетесь с 
+            <a href="#" class="text-white">пользовательским соглашением</a> и 
+            <a href="#" class="text-white">политикой конфиденциальности</a>.
+          </small>
+        </form>
+      </div>
+    </div>
+
+    <hr class="border-light">
+
+    <!-- Третья секция: копирайт и иконки платежей -->
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <small>
+          © 1997–2025 ООО «Спортмастер». Адрес для юридически значимых сообщений:
+          E-Commerce@sportmaster.ru. Все права защищены.
+        </small>
+      </div>
+      <div class="col-md-6 text-md-right">
+        <i class="fab fa-cc-visa fa-2x mx-1"></i>
+        <i class="fab fa-cc-mastercard fa-2x mx-1"></i>
+        <i class="fab fa-cc-amex fa-2x mx-1"></i>
+        <i class="fab fa-cc-discover fa-2x mx-1"></i>
+      </div>
+    </div>
+  </div>
+</footer>  
+
+  <!-- Bootstrap JS + jQuery + Popper -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+
+  <!-- Смена большого изображения при клике на превью -->
+  <script>
+    document
+      .querySelectorAll('.thumbnails li')
+      .forEach(function(thumb) {
+        thumb.addEventListener('click', function() {
+          var prevActive = document.querySelector('.thumbnails li.active');
+          if(prevActive) prevActive.classList.remove('active');
+          thumb.classList.add('active');
+          document.getElementById('currentImage').src =
+            'inc/images/' + thumb.dataset.img;
+        });
+      });
+  </script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var thumbs    = document.querySelectorAll('.thumbnails li'),
+        mainImage = document.querySelector('.main-image img');
+
+    thumbs.forEach(function(thumb) {
+      thumb.addEventListener('click', function() {
+        // выключаем текущий active
+        document.querySelector('.thumbnails li.active')
+                .classList.remove('active');
+        // включаем нажатый
+        thumb.classList.add('active');
+        // меняем картинку
+        var newSrc = thumb.querySelector('img').getAttribute('src');
+        mainImage.setAttribute('src', newSrc);
+      });
+    });
+  });
+</script>
+</body>
+</html>
+  </div>
